@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello Dialog</title>
-    <link rel="stylesheet" href="styles/HelloDialog.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        .dialog{
+            background-color: orange;
+            width: 300px;
+            height: 50px;
+            border-radius: 5px;
+            color: white;
+            font-size:1.2em;
+            font-weight:bold;
+            padding: 13px 0px 0px 20px;
+            position: absolute;
+        }
+        .dialog .close{
+            position: absolute;
+            right: 20px;
+        }
+    </style>
 </head>
 
 <body>
-<div class="box">
-    Hello Dialog<span>&times;</span>
+<div class="dialog">
+    Hello Dialog<span class="close">&times;</span>
 </div>
 
 </body>
